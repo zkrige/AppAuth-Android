@@ -264,7 +264,7 @@ public class AuthorizationService {
         checkNotDisposed();
         checkNotNull(request);
         checkNotNull(completedIntent);
-        checkNotNull(customTabsIntent);
+        checkNotNull(authIntent);
 
         mContext.startActivity(AuthorizationManagementActivity.createStartIntent(
                 mContext,
