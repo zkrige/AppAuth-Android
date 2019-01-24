@@ -265,7 +265,8 @@ public class AuthorizationService {
         checkNotNull(request);
         checkNotNull(completedIntent);
         checkNotNull(authIntent);
-
+    
+        authIntent.setData(request.toUri());
         mContext.startActivity(AuthorizationManagementActivity.createStartIntent(
                 mContext,
                 request,
